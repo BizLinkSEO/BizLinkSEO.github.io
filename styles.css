@@ -78,9 +78,7 @@ a {
   font-size: 24px;
   cursor: pointer;
 }
-.gp-design{
-  color: #033a5f;
-}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, #2E86C1, #27AE60);
@@ -222,7 +220,111 @@ a {
   border-radius: 5px;
   margin-top: 20px;
 }
+/* What Do I Need to Get Started? Section */
+.get-started {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #F8F9F9;
+}
 
+.get-started h2 {
+  font-size: 2.2rem;
+  color: #2E86C1;
+  margin-bottom: 10px;
+}
+
+.get-started .subheading {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.step {
+  flex: 1;
+  max-width: 280px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step-icon {
+  margin-bottom: 20px;
+}
+
+.step-icon i {
+  font-size: 2.5rem;
+  color: #2E86C1;
+  background-color: #E8F4FD;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  color: #2E86C1;
+  margin-bottom: 15px;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.step ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.step ul li {
+  padding: 8px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.step ul li strong {
+  color: #2E86C1;
+}
+
+.form-link, .whatsapp-link {
+  color: #2E86C1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form-link:hover, .whatsapp-link:hover {
+  color: #27AE60;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    max-width: 100%;
+  }
+}
 /* Testimonials Section */
 .testimonials {
   padding: 80px 0;
@@ -1032,6 +1134,410 @@ a {
   }
 
   .step {
+    max-width: 100%;
+  }
+}
+/* Contact Hero Section */
+.contact-hero {
+  background: linear-gradient(135deg, #2E86C1, #27AE60);
+  color: #fff;
+  padding: 150px 0 100px;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+}
+
+/* Contact Methods Section */
+.contact-methods {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-methods h2 {
+  margin-bottom: 40px;
+  color: #2E86C1;
+}
+
+.methods {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.method {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.method i {
+  font-size: 2rem;
+  color: #2E86C1;
+  margin-bottom: 20px;
+}
+
+.method h3 {
+  color: #2E86C1;
+  margin-bottom: 10px;
+}
+
+.method p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.method .btn {
+  background-color: #2E86C1;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* What Do I Need to Get Started? Section */
+.get-started {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #F8F9F9;
+}
+
+.get-started h2 {
+  font-size: 2.2rem;
+  color: #2E86C1;
+  margin-bottom: 10px;
+}
+
+.get-started .subheading {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.step {
+  flex: 1;
+  max-width: 280px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step-icon {
+  margin-bottom: 20px;
+}
+
+.step-icon i {
+  font-size: 2.5rem;
+  color: #2E86C1;
+  background-color: #E8F4FD;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  color: #2E86C1;
+  margin-bottom: 15px;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.step ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.step ul li {
+  padding: 8px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.step ul li strong {
+  color: #2E86C1;
+}
+
+.form-link, .whatsapp-link {
+  color: #2E86C1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form-link:hover, .whatsapp-link:hover {
+  color: #27AE60;
+}
+
+/* Submit Your Requirements Section */
+.submit-requirements {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.submit-requirements h2 {
+  margin-bottom: 20px;
+  color: #2E86C1;
+}
+
+.submit-requirements p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.whatsapp-cta {
+  font-size: 1rem;
+  color: #555;
+}
+
+.whatsapp-cta .whatsapp-link {
+  color: #2E86C1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.whatsapp-cta .whatsapp-link:hover {
+  color: #27AE60;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .methods, .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .method, .step {
+    max-width: 100%;
+  }
+}
+/* Pricing Hero Section */
+.pricing-hero {
+  background: linear-gradient(135deg, #2E86C1, #27AE60);
+  color: #fff;
+  padding: 150px 0 100px;
+  text-align: center;
+}
+
+.pricing-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.pricing-hero p {
+  font-size: 1.2rem;
+}
+
+/* What Do I Need to Get Started? Section */
+.get-started {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #F8F9F9;
+}
+
+.get-started h2 {
+  font-size: 2.2rem;
+  color: #2E86C1;
+  margin-bottom: 10px;
+}
+
+.get-started .subheading {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.step {
+  flex: 1;
+  max-width: 280px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step-icon {
+  margin-bottom: 20px;
+}
+
+.step-icon i {
+  font-size: 2.5rem;
+  color: #2E86C1;
+  background-color: #E8F4FD;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  color: #2E86C1;
+  margin-bottom: 15px;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.step ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.step ul li {
+  padding: 8px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.step ul li strong {
+  color: #2E86C1;
+}
+
+.form-link, .whatsapp-link {
+  color: #2E86C1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form-link:hover, .whatsapp-link:hover {
+  color: #27AE60;
+}
+
+/* Pricing and Packages Section */
+.pricing-packages {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.pricing-packages h2 {
+  margin-bottom: 20px;
+  color: #2E86C1;
+}
+
+.pricing-packages .subheading {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.plan {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.plan.highlight {
+  border: 2px solid #2E86C1;
+}
+
+.plan h3 {
+  color: #2E86C1;
+  margin-bottom: 20px;
+}
+
+.plan .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.plan ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.plan ul li:last-child {
+  border-bottom: none;
+}
+
+.plan .btn {
+  background-color: #2E86C1;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .steps, .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step, .plan {
     max-width: 100%;
   }
 }
