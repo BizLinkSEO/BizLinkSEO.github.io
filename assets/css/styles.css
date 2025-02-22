@@ -68,7 +68,7 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  height: 100vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,7 +235,7 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero{
-    height: 80vh;
+    height: 85vh;
     
   }
   .hero h1 {
