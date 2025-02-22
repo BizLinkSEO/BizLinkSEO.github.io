@@ -1,0 +1,383 @@
+/* Global Variables */
+:root {
+  --primary-color: #007BFF; /* Primary brand color */
+  --secondary-color: #0056B3; /* Secondary brand color */
+  --light-bg: #F8F9FA; /* Light background color */
+  --dark-bg: #0056B3; /* Dark background color */
+  --text-color: #333; /* Default text color */
+  --text-light: #fff; /* Light text color */
+  --accent-color: #FFC107; /* Accent color for highlights */
+}
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sticky Navigation Bar */
+.sticky-nav {
+  background: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 0;
+  background: var(--primary-color);
+  background-color: #007bffe6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-light) !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+
+.navbar-nav .dropdown-menu {
+  background: var(--secondary-color);
+}
+
+.navbar-nav .dropdown-item {
+  color: var(--text-light);
+}
+
+.navbar-nav .dropdown-item:hover {
+  background: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--text-light);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-outline-light {
+  border-color: var(--text-light);
+  color: var(--text-light);
+}
+
+.hero .btn-outline-light:hover {
+  background: var(--text-light);
+  color: var(--primary-color);
+}
+
+/* Services Section */
+.services {
+  background: var(--light-bg);
+  padding: 5rem 0;
+}
+
+.services .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.services .card:hover {
+  transform: translateY(-10px);
+}
+
+.services .card-body {
+  padding: 2rem;
+}
+
+.services .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.services .card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Other Services Section */
+.other-services {
+  background: linear-gradient(135deg, var(--light-bg), #E9ECEF);
+  padding: 5rem 0;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background: var(--text-light);
+  padding: 5rem 0;
+}
+
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose-us ul li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.why-choose-us img {
+  border-radius: 10px;
+}
+
+/* Our Process Section */
+.our-process {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: 5rem 0;
+  color: var(--text-light);
+}
+
+.our-process i {
+  color: var(--text-light);
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: var(--light-bg);
+  padding: 5rem 0;
+}
+
+.testimonials .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .card-body {
+  padding: 2rem;
+}
+
+.testimonials .card-text {
+  font-style: italic;
+}
+
+/* Frequently Asked Questions Section */
+.faqs {
+  padding: 5rem 0;
+}
+
+.faqs .accordion-button {
+  font-weight: bold;
+}
+
+.faqs .accordion-body {
+  background: var(--light-bg);
+}
+
+/* Final CTA Section */
+.final-cta {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: 5rem 0;
+  color: var(--text-light);
+}
+
+.final-cta .btn-light {
+  background: var(--text-light);
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background: var(--dark-bg);
+  color: var(--text-light);
+  padding: 2rem 0;
+}
+
+footer a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+  }
+}
+/* Dropdown Arrow Styling */
+/* Dropdown Arrow Styling */
+.dropdown-arrow {
+  padding: 0.5rem;
+  margin-left: -0.5rem;
+  cursor: pointer;
+}
+
+.dropdown-arrow i {
+  font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+  .navbar-nav .dropdown-menu {
+    background: var(--primary-color);
+    margin-top: 0.5rem;
+  }
+  .navbar-nav .dropdown-item {
+    padding: 0.5rem 1rem;
+  }
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+/* Sample Guest Posts Section */
+.sample-guest-posts {
+  background-color: var(--light-bg); /* Use your light background color */
+}
+
+.sample-guest-posts .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sample-guest-posts .card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+}
+
+.sample-guest-posts .card-header {
+  border-radius: 10px 10px 0 0;
+}
+
+.sample-guest-posts .card-body {
+  padding: 2rem;
+}
+
+.sample-guest-posts .btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sample-guest-posts .btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+/* Why Choose Us Section */
+.why-choose-us .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: var(--text-light); /* Use your light background color */
+}
+
+.why-choose-us .card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+}
+
+.why-choose-us .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.why-choose-us .card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.why-choose-us .fa-3x {
+  color: var(--primary-color); /* Use your primary color */
+}
+/* Who We Are Section */
+.who-we-are {
+  background-color: var(--light-bg); /* Use your light background color */
+}
+
+.who-we-are .bg-light {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.who-we-are h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.who-we-are .lead {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.who-we-are p {
+  font-size: 1rem;
+  
+  margin-bottom: 2rem;
+}
+
+.who-we-are img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Ensure vertical alignment for Why Choose Us section */
+.why-choose-us .row {
+  display: flex;
+  align-items: center; /* Vertically center content */
+}
+
+.why-choose-us ul {
+  margin: 0;
+  padding: 0;
+}
+
+.why-choose-us ul li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
