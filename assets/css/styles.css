@@ -7,9 +7,17 @@
   --text-color: #333; /* Default text color */
   --text-light: #fff; /* Light text color */
   --accent-color: #FFC107; /* Accent color for highlights */
-}
+  --royal-blue: #007BFF;
+  --dark-blue: #0056B3;
+  --light-gray: #F8F9FA;
+  --soft-blue: #E3F2FD;
+  --charcoal-gray: #333333;
+  --footer-blue: #003366;
+} 
 
 /* General Styles */
+
+
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
@@ -18,13 +26,18 @@ body {
 
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
+
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+header {
+  background-color: var(--dark-blue);
+  padding: 0.5rem 5vw;
 }
 
 /* Sticky Navigation Bar */
@@ -34,11 +47,11 @@ h1, h2, h3 {
   transition: all 0.3s ease-in-out;
   padding: 1rem 0;
   background: var(--primary-color);
-  background-color: #007bffe6;
+  background-color: #0056b3;
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 1rem 0;
+  padding: .5rem 0;
 }
 
 .navbar-brand {
@@ -68,7 +81,7 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  height: 85vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,10 +91,9 @@ h1, h2, h3 {
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: -50px;
+  font-size: clamp(2rem, 8vw, 4rem);
+  line-height: 1.2;
+  margin-top: -3rem;
 }
 
 .hero p {
@@ -98,6 +110,9 @@ h1, h2, h3 {
   background: var(--text-light);
   color: var(--primary-color);
 }
+
+
+
 
 /* Services Section */
 .services {
@@ -236,12 +251,12 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero{
-    height: 85vh;
+    height: 90vh;
     
   }
   .hero h1 {
     font-size: 2rem;
-    margin-top: -50px;
+    margin-top: -4rem;
   }
 
   .hero p {
