@@ -14,53 +14,99 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
   }
-  .navbar {
-    padding: 1rem 0;
-    
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  
-  .navbar-nav .nav-link {
-    font-size: 1rem;
-    margin: 0 0.5rem;
-  }
-  
-  .navbar-toggler {
-    border: none;
-  }
-  
-  @media (max-width: 991.98px) {
-    .navbar-collapse {
-      background-color: var(--primary-color);
-      padding: 1rem;
-      border-radius: 0.5rem;
-    }
-    .navbar-nav .nav-link {
-      margin: 0.5rem 0;
-    }
-  }
-  .hero-section {
+  /* Header */
+/* Header */
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white; /* Ensure logo text is white */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  color: white !important; /* Force white text color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.8) !important; /* Slightly transparent white on hover */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Navbar Collapse for Mobile */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute; /* Absolutely position the collapse menu */
+    top: 100%; /* Position below the header */
+    left: 0;
+    right: 0;
     background-color: var(--primary-color);
-    min-height: 100vh;
-    padding: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 1000; /* Ensure it appears above other content */
   }
-  
-  .hero-section h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem); /* Fluid font size */
+  .navbar-nav .nav-link {
+    margin: 0.5rem 0;
+    color: white !important; /* Ensure text is white in mobile view */
   }
-  
-  .hero-section .lead {
-    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Fluid font size */
+  .navbar-nav .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for dropdown */
   }
-  
-  .hero-section .btn {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
+  .navbar-nav .dropdown-item {
+    color: white; /* Dropdown item text color */
   }
+  .navbar-nav .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect for dropdown items */
+    color: white; /* Ensure text remains white on hover */
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--primary-color);
+  min-height: 85vh; /* Reduced height to minimize spacing */
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Fluid font size */
+  margin-top: 0; /* Remove default margin */
+}
+
+.hero-section .lead {
+  font-size: clamp(1.4rem, 2.5vw, 1.5rem); /* Fluid font size */
+}
+
+.hero-section .btn {
+  font-size: 1.25rem; /* Increased button text size */
+  font-weight: 570!important;
+  padding: 0.75rem 1.5rem; /* Adjusted padding for better proportions */
+}
+
+.hero-section .btn-light {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.hero-section .btn-outline-light {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.hero-section .btn-outline-light:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
   .about-section {
     background-color: var(--secondary-color);
     padding: 5rem 0;
@@ -105,107 +151,8 @@
     max-width: 100%;
     height: auto;
   }
-  /* Header and Navbar */
-.navbar {
-  padding: 1rem 0;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1rem;
-  margin: 0 0.5rem;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-/* Mobile Menu Overlay */
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    position: absolute;
-    top: 100%; /* Position below the header */
-    left: 0;
-    right: 0;
-    background-color: var(--primary-color);
-    z-index: 1000; /* Ensure it appears above other content */
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .navbar-nav .nav-link {
-    margin: 0.5rem 0;
-  }
-
-  .navbar-nav .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-  }
-
-  .navbar-nav .dropdown-item {
-    color: var(--secondary-color);
-  }
-
-  .navbar-nav .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-}
 
 
-
-
-
-
-
-
-
-
-
-/* Header */
-.navbar {
-  padding: 1rem 0;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1rem;
-  margin: 0 0.5rem;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-/* Navbar Collapse for Mobile */
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    background-color: var(--primary-color);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    margin-top: 1rem; /* Add margin to separate from the hero section */
-  }
-  .navbar-nav .nav-link {
-    margin: 0.5rem 0;
-  }
-  .navbar-nav .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.1); /* Light background for dropdown */
-  }
-  .navbar-nav .dropdown-item {
-    color: var(--secondary-color);
-  }
-  .navbar-nav .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Hover effect for dropdown items */
-  }
-}
   /* Proven SEO & Backlink Solutions Section */
 .solutions-section {
     background-color: var(--accent-color);
