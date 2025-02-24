@@ -60,6 +60,52 @@
     font-size: 1.1rem;
     padding: 0.75rem 1.5rem;
   }
+
+
+
+/* Header */
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Navbar Collapse for Mobile */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem; /* Add margin to separate from the hero section */
+  }
+  .navbar-nav .nav-link {
+    margin: 0.5rem 0;
+  }
+  .navbar-nav .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for dropdown */
+  }
+  .navbar-nav .dropdown-item {
+    color: var(--secondary-color);
+  }
+  .navbar-nav .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect for dropdown items */
+  }
+}
+
+
+
   .about-section {
     background-color: var(--secondary-color);
     padding: 5rem 0;
