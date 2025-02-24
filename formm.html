@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="guestPostForm">
+        <label>Target URL:</label>
+        <input type="url" name="target_url" placeholder="Website you want to place links on" required>
+    
+        <label>Desired Anchor Text:</label>
+        <input type="text" name="anchor_text" placeholder="The clickable text for your link" required>
+    
+        <label>Preferred Article Topic (Optional):</label>
+        <input type="text" name="article_topic" placeholder="What the guest post should be about">
+    
+        <label>Niche Category (Optional):</label>
+        <input type="text" name="niche_category" placeholder="Relevant industry for your website">
+    
+        <label>Additional Information:</label>
+        <textarea name="additional_info" placeholder="Anything else we should know?"></textarea>
+    
+        <label>Do you need content writing?</label>
+        <select name="content_writing">
+            <option value="Want Us to Write an Article">Want Us to Write an Article</option>
+            <option value="Provide my own content">I will provide my own content</option>
+        </select>
+    
+        <label>Article Link (if available):</label>
+        <input type="url" name="article_link" placeholder="URL of your pre-written article (Optional)">
+    
+        <label>Upload Spreadsheet (if any):</label>
+        <input type="file" name="upload_spreadsheet">
+    
+        <label>Email Address:</label>
+        <input type="email" name="email" placeholder="Your best contact email" required>
+    
+        <label>Phone Number (WhatsApp):</label>
+        <input type="tel" name="whatsapp" placeholder="For direct communication" required>
+    
+        <label>What is your budget?</label>
+        <select name="budget" id="budgetSelect" required onchange="toggleBudgetInput()">
+            <option value="$50-$100">$50 - $100</option>
+            <option value="$100-$200">$100 - $200</option>
+            <option value="$200-$500">$200 - $500</option>
+            <option value="$500+">$500+</option>
+            <option value="Other">Other (Enter manually)</option>
+        </select>
+        <input type="text" id="customBudget" name="custom_budget" placeholder="Enter your budget" style="display: none;">
+    
+        <label>Choose Your Plan:</label>
+        <select name="plan" required>
+            <option value="Basic">Basic</option>
+            <option value="Standard">Standard</option>
+            <option value="Premium">Premium</option>
+        </select>
+    
+        <button type="submit">Submit & Contact on WhatsApp</button>
+    </form>
+    
+    <p id="responseMessage"></p>
+    
+    <script>
+    document.getElementById("guestPostForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Stop default form submission
+        var form = event.target;
+        var formData = new FormData(form);
+    
+        // ✅ Send data to Google Sheets
+        fetch("https://script.google.com/macros/s/AKfycbyrUcYw1hfJAlwb9dO-AjOi-w4TK8IkYr68OQFZNmOnjl49RqqAXPH4BdorJyv0Oe9p8A/exec", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("responseMessage").innerText = "✅ Successfully Submitted!";
+            document.getElementById("responseMessage").style.color = "green";
+    
+            // ✅ Wait 2 seconds before redirecting
+            setTimeout(() => {
+                var fixedPhone = "9230704019488"; // 🔥 Change this to YOUR WhatsApp number
+                var msg = encodeURIComponent("Hello, I submitted a guest post order. Please check my details.");
+                window.location.href = "https://wa.me/" + fixedPhone + "?text=" + msg;
+            }, 2000);
+            
+            form.reset(); // ✅ Clear form after submission
+        })
+        .catch(error => {
+            console.error("Submission error:", error);
+            document.getElementById("responseMessage").innerText = "❌ Submission Failed! Try Again.";
+            document.getElementById("responseMessage").style.color = "red";
+        });
+    });
+    </script>
+    
+</body>
+</html>
