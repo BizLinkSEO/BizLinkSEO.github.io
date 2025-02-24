@@ -24,7 +24,7 @@
   }
   
   .navbar-nav .nav-link {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0 0.5rem;
   }
   
@@ -44,7 +44,7 @@
   }
   .hero-section {
     background-color: var(--primary-color);
-    min-height: 80vh;
+    min-height: 90vh;
     padding: 2rem;
   }
   
@@ -57,7 +57,7 @@
   }
   
   .hero-section .btn {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 0.75rem 1.5rem;
   }
   .about-section {
