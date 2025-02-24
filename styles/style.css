@@ -44,7 +44,7 @@
   }
   .hero-section {
     background-color: var(--primary-color);
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 2rem;
   }
   
