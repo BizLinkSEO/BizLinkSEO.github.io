@@ -448,6 +448,7 @@ transform: rotate(180deg); /* Smooth rotation effect */
 
 .process-section a {
   color: var(--primary-color);
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
