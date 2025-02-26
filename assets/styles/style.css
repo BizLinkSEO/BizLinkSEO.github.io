@@ -415,6 +415,58 @@ transform: rotate(180deg); /* Smooth rotation effect */
 .our-process-section .btn-primary:hover {
   background-color: #5a3fb0; /* Darker shade of primary color */
 }
+
+/* Process Section */
+.process-section {
+  background-color: var(--accent-color);
+}
+
+.process-section h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem); /* Fluid font size */
+  color: var(--primary-color);
+}
+
+.process-section .card {
+  background-color: var(--secondary-color);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.process-section .card:hover {
+  transform: translateY(-10px);
+}
+
+.process-section h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.process-section p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.process-section a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.process-section a:hover {
+  color: #5a3fb0; /* Darker shade of primary color */
+}
+
+.process-section .btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.process-section .btn-primary:hover {
+  background-color: #5a3fb0; /* Darker shade of primary color */
+}
+
 /* Customize WhatsApp icon */
 .bi-whatsapp {
   font-size: 1.2rem; /* Adjust size */
