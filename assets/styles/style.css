@@ -2286,3 +2286,54 @@ color: var(--secondary-color);
 background-color: var(--secondary-color);
 color: var(--primary-color);
 }
+/* Floating Icons */
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.floating-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon {
+  background-color: #230524; /* WhatsApp brand color */
+}
+
+.email-icon {
+  background-color: #674CC4; /* Your primary color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .floating-icons {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .floating-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
