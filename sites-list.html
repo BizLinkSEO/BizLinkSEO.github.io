@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizLinkSEO - Premium Guest Posting Sites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .site-card {
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .site-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .site-meta {
+            font-size: 0.85rem;
+        }
+        .badge-niche {
+            background-color: #e9f7fe;
+            color: #0d6efd;
+        }
+        .table-responsive {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .table th {
+            background-color: #f8f9fa;
+        }
+        .filter-btn.active {
+            background-color: #0d6efd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">BizLinkSEO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#process">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sites-list.html">Sites List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-subpage text-center py-5 bg-primary text-white">
+        <div class="container py-4">
+            <h1 class="display-5 fw-bold mb-3">Our Premium Publishing Network</h1>
+            <p class="lead mb-4">Access to 500+ high-authority websites across multiple niches</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#site-list" class="btn btn-light btn-lg px-4">View Sites</a>
+                <a href="index.html#contact" class="btn btn-outline-light btn-lg px-4">Request Access</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-3 bg-white rounded-3 shadow-sm">
+                        <h2 class="text-primary fw-bold">500+</h2>
+                        <p class="mb-0">Websites</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 bg-white rounded-3 shadow-sm">
+                        <h2 class="text-primary fw-bold">DA 40+</h2>
+                        <p class="mb-0">Average Domain Authority</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 bg-white rounded-3 shadow-sm">
+                        <h2 class="text-primary fw-bold">50+</h2>
+                        <p class="mb-0">Industries Covered</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3 bg-white rounded-3 shadow-sm">
+                        <h2 class="text-primary fw-bold">95%</h2>
+                        <p class="mb-0">Acceptance Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-5" id="site-list">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Available Sites</h2>
+                    <p class="text-muted">Filter by niche or search for specific sites</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search sites..." id="siteSearch">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-sm btn-outline-primary filter-btn active" data-filter="all">All</button>
+                    <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="business">Business</button>
+                    <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="technology">Technology</button>
+                    <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="health">Health</button>
+                    <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="finance">Finance</button>
+                    <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="lifestyle">Lifestyle</button>
+                    <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="education">Education</button>
+                </div>
+            </div>
+
+            <!-- Sites List -->
+            <div class="row g-4" id="sitesContainer">
+                <!-- Site Card 1 -->
+                <div class="col-md-6 col-lg-4 site-card" data-niche="technology business">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h3 class="h5 mb-0">TechInsider</h3>
+                                <span class="badge bg-primary">DA 52</span>
+                            </div>
+                            <p class="text-muted small">Leading technology news and analysis platform covering AI, startups, and innovation.</p>
+                            <div class="site-meta d-flex justify-content-between mt-3">
+                                <span class="badge badge-niche">Technology</span>
+                                <span><i class="bi bi-arrow-up-right-circle me-1"></i> 50K/mo</span>
+                                <span><i class="bi bi-currency-dollar me-1"></i> $250</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site Card 2 -->
+                <div class="col-md-6 col-lg-4 site-card" data-niche="health">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h3 class="h5 mb-0">HealthToday</h3>
+                                <span class="badge bg-primary">DA 48</span>
+                            </div>
+                            <p class="text-muted small">Trusted health and wellness resource with medical expert contributors.</p>
+                            <div class="site-meta d-flex justify-content-between mt-3">
+                                <span class="badge badge-niche">Health</span>
+                                <span><i class="bi bi-arrow-up-right-circle me-1"></i> 120K/mo</span>
+                                <span><i class="bi bi-currency-dollar me-1"></i> $350</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site Card 3 -->
+                <div class="col-md-6 col-lg-4 site-card" data-niche="finance">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h3 class="h5 mb-0">FinancePulse</h3>
+                                <span class="badge bg-primary">DA 65</span>
+                            </div>
+                            <p class="text-muted small">Premier financial news outlet covering markets, investing, and personal finance.</p>
+                            <div class="site-meta d-flex justify-content-between mt-3">
+                                <span class="badge badge-niche">Finance</span>
+                                <span><i class="bi bi-arrow-up-right-circle me-1"></i> 300K/mo</span>
+                                <span><i class="bi bi-currency-dollar me-1"></i> $500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site Card 4 -->
+                <div class="col-md-6 col-lg-4 site-card" data-niche="business">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h3 class="h5 mb-0">BusinessChronicle</h3>
+                                <span class="badge bg-primary">DA 56</span>
+                            </div>
+                            <p class="text-muted small">Insightful analysis of global business trends and corporate strategies.</p>
+                            <div class="site-meta d-flex justify-content-between mt-3">
+                                <span class="badge badge-niche">Business</span>
+                                <span><i class="bi bi-arrow-up-right-circle me-1"></i> 85K/mo</span>
+                                <span><i class="bi bi-currency-dollar me-1"></i> $400</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site Card 5 -->
+                <div class="col-md-6 col-lg-4 site-card" data-niche="lifestyle">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h3 class="h5 mb-0">ModernLiving</h3>
+                                <span class="badge bg-primary">DA 42</span>
+                            </div>
+                            <p class="text-muted small">Trendsetting lifestyle magazine covering home, travel, and culture.</p>
+                            <div class="site-meta d-flex justify-content-between mt-3">
+                                <span class="badge badge-niche">Lifestyle</span>
+                                <span><i class="bi bi-arrow-up-right-circle me-1"></i> 75K/mo</span>
+                                <span><i class="bi bi-currency-dollar me-1"></i> $300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site Card 6 -->
+                <div class="col-md-6 col-lg-4 site-card" data-niche="education">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h3 class="h5 mb-0">EduInsights</h3>
+                                <span class="badge bg-primary">DA 58</span>
+                            </div>
+                            <p class="text-muted small">Leading education resource for students, teachers, and academic professionals.</p>
+                            <div class="site-meta d-flex justify-content-between mt-3">
+                                <span class="badge badge-niche">Education</span>
+                                <span><i class="bi bi-arrow-up-right-circle me-1"></i> 95K/mo</span>
+                                <span><i class="bi bi-currency-dollar me-1"></i> $350</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Sites Table (Optional) -->
+            <div class="mt-5">
+                <h3 class="fw-bold mb-4">Complete Sites Database</h3>
+                
+                <!-- Horizontal Scroll Table -->
+                <div class="mobile-table-container">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="sticky-column">Website</th>
+                                    <th>DA</th>
+                                    <th>Traffic</th>
+                                    <th>Niche</th>
+                                    <th>Price</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="sticky-column">TechInsider</td>
+                                    <td>52</td>
+                                    <td>50K/mo</td>
+                                    <td>Technology</td>
+                                    <td>$250</td>
+                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="sticky-column">HealthToday</td>
+                                    <td>48</td>
+                                    <td>120K/mo</td>
+                                    <td>Health</td>
+                                    <td>$350</td>
+                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="sticky-column">FinancePulse</td>
+                                    <td>65</td>
+                                    <td>300K/mo</td>
+                                    <td>Finance</td>
+                                    <td>$500</td>
+                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="sticky-column">BusinessChronicle</td>
+                                    <td>56</td>
+                                    <td>85K/mo</td>
+                                    <td>Business</td>
+                                    <td>$400</td>
+                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="sticky-column">ModernLiving</td>
+                                    <td>42</td>
+                                    <td>75K/mo</td>
+                                    <td>Lifestyle</td>
+                                    <td>$300</td>
+                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="sticky-column">EduInsights</td>
+                                    <td>58</td>
+                                    <td>95K/mo</td>
+                                    <td>Education</td>
+                                    <td>$350</td>
+                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator for Mobile -->
+                <div class="d-block d-md-none text-center mt-2 text-muted small">
+                    <i class="bi bi-arrow-left-right"></i> Scroll horizontally to view all columns
+                </div>
+            </div>
+            
+            <style>
+                /* Mobile Table Container */
+                .mobile-table-container {
+                    width: 100%;
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+                    border-radius: 10px;
+                    background: white;
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+                }
+                
+                /* Make table take full width */
+                .mobile-table-container .table {
+                    min-width: 650px; /* Ensures table doesn't collapse on mobile */
+                    margin-bottom: 0;
+                }
+                
+                /* Sticky first column */
+                .sticky-column {
+                    position: sticky;
+                    left: 0;
+                    background: white;
+                    z-index: 1;
+                    box-shadow: 2px 0 5px -2px rgba(0,0,0,0.1);
+                }
+                
+                /* Table cell styling */
+                .mobile-table-container td, 
+                .mobile-table-container th {
+                    white-space: nowrap;
+                    padding: 12px 15px;
+                    vertical-align: middle;
+                }
+                
+                /* Header styling */
+                .mobile-table-container thead th {
+                    background-color: #f8f9fa;
+                    position: sticky;
+                    top: 0;
+                    z-index: 2;
+                }
+                
+                /* Button styling */
+                .mobile-table-container .btn {
+                    white-space: nowrap;
+                }
+            </style>
+
+            <div class="text-center mt-5">
+                <a href="index.html#contact" class="btn btn-primary btn-lg px-5">
+                    <i class="bi bi-envelope me-2"></i> Request Full Sites List
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="fw-bold mb-3">BizLinkSEO</h3>
+                    <p>Premium content and link building services to help your business grow online.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="guest-posting.html" class="text-white-50">Guest Posting</a></li>
+                        <li class="mb-2"><a href="niche-edits.html" class="text-white-50">Niche Edits</a></li>
+                        <li class="mb-2"><a href="press-release.html" class="text-white-50">Press Releases</a></li>
+                        <li class="mb-2"><a href="content-writing.html" class="text-white-50">Article Writing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html#about" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="index.html#process" class="text-white-50">Our Process</a></li>
+                        <li class="mb-2"><a href="index.html#testimonials" class="text-white-50">Testimonials</a></li>
+                        <li class="mb-2"><a href="sites-list.html" class="text-white-50">Sites List</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <p>Subscribe to get SEO tips and special offers.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email">
+                        <button type="submit" class="btn btn-accent">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 BizLinkSEO. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const siteCards = document.querySelectorAll('.site-card');
+            const siteSearch = document.getElementById('siteSearch');
+            
+            // Filter by niche
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    siteCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-niche').includes(filterValue)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Search functionality
+            siteSearch.addEventListener('keyup', function() {
+                const searchValue = this.value.toLowerCase();
+                
+                siteCards.forEach(card => {
+                    const cardText = card.textContent.toLowerCase();
+                    if (cardText.includes(searchValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
