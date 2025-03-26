@@ -260,79 +260,143 @@
             <div class="mt-5">
                 <h3 class="fw-bold mb-4">Complete Sites Database</h3>
                 
-                <!-- Horizontal Scroll Table -->
-                <div class="mobile-table-container">
-                    <div class="table-responsive">
-                        <table class="table table-hover mb-0">
-                            <thead>
-                                <tr>
-                                    <th class="sticky-column">Website</th>
-                                    <th>DA</th>
-                                    <th>Traffic</th>
-                                    <th>Niche</th>
-                                    <th>Price</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="sticky-column">TechInsider</td>
-                                    <td>52</td>
-                                    <td>50K/mo</td>
-                                    <td>Technology</td>
-                                    <td>$250</td>
-                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="sticky-column">HealthToday</td>
-                                    <td>48</td>
-                                    <td>120K/mo</td>
-                                    <td>Health</td>
-                                    <td>$350</td>
-                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="sticky-column">FinancePulse</td>
-                                    <td>65</td>
-                                    <td>300K/mo</td>
-                                    <td>Finance</td>
-                                    <td>$500</td>
-                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="sticky-column">BusinessChronicle</td>
-                                    <td>56</td>
-                                    <td>85K/mo</td>
-                                    <td>Business</td>
-                                    <td>$400</td>
-                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="sticky-column">ModernLiving</td>
-                                    <td>42</td>
-                                    <td>75K/mo</td>
-                                    <td>Lifestyle</td>
-                                    <td>$300</td>
-                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="sticky-column">EduInsights</td>
-                                    <td>58</td>
-                                    <td>95K/mo</td>
-                                    <td>Education</td>
-                                    <td>$350</td>
-                                    <td><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                
-                <!-- Scroll Indicator for Mobile -->
-                <div class="d-block d-md-none text-center mt-2 text-muted small">
-                    <i class="bi bi-arrow-left-right"></i> Scroll horizontally to view all columns
+                <!-- Responsive table container -->
+                <div class="responsive-table-container">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Website</th>
+                                <th>DA</th>
+                                <th>Traffic</th>
+                                <th>Niche</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Website">TechInsider</td>
+                                <td data-label="DA">52</td>
+                                <td data-label="Traffic">50K/mo</td>
+                                <td data-label="Niche">Technology</td>
+                                <td data-label="Price">$250</td>
+                                <td data-label="Action"><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Website">HealthToday</td>
+                                <td data-label="DA">48</td>
+                                <td data-label="Traffic">120K/mo</td>
+                                <td data-label="Niche">Health</td>
+                                <td data-label="Price">$350</td>
+                                <td data-label="Action"><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Website">FinancePulse</td>
+                                <td data-label="DA">65</td>
+                                <td data-label="Traffic">300K/mo</td>
+                                <td data-label="Niche">Finance</td>
+                                <td data-label="Price">$500</td>
+                                <td data-label="Action"><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Website">BusinessChronicle</td>
+                                <td data-label="DA">56</td>
+                                <td data-label="Traffic">85K/mo</td>
+                                <td data-label="Niche">Business</td>
+                                <td data-label="Price">$400</td>
+                                <td data-label="Action"><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Website">ModernLiving</td>
+                                <td data-label="DA">42</td>
+                                <td data-label="Traffic">75K/mo</td>
+                                <td data-label="Niche">Lifestyle</td>
+                                <td data-label="Price">$300</td>
+                                <td data-label="Action"><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Website">EduInsights</td>
+                                <td data-label="DA">58</td>
+                                <td data-label="Traffic">95K/mo</td>
+                                <td data-label="Niche">Education</td>
+                                <td data-label="Price">$350</td>
+                                <td data-label="Action"><a href="index.html#contact" class="btn btn-sm btn-outline-primary">Order</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+            
+            <style>
+                /* Base table styles */
+                .responsive-table-container {
+                    width: 100%;
+                    overflow: hidden;
+                    border-radius: 0.5rem;
+                    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+                    background: white;
+                }
+                
+                /* Desktop table styling */
+                @media (min-width: 768px) {
+                    .responsive-table-container table {
+                        width: 100%;
+                    }
+                    
+                    .responsive-table-container th,
+                    .responsive-table-container td {
+                        padding: 0.75rem;
+                        text-align: left;
+                        border-bottom: 1px solid #dee2e6;
+                    }
+                }
+                
+                /* Mobile table styling */
+                @media (max-width: 767.98px) {
+                    .responsive-table-container table {
+                        width: 100%;
+                        border: 0;
+                    }
+                    
+                    .responsive-table-container thead {
+                        display: none;
+                    }
+                    
+                    .responsive-table-container tr {
+                        display: block;
+                        margin-bottom: 1rem;
+                        border: 1px solid #dee2e6;
+                        border-radius: 0.25rem;
+                    }
+                    
+                    .responsive-table-container td {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0.5rem 1rem;
+                        border-bottom: 1px solid #f1f1f1;
+                        text-align: right;
+                    }
+                    
+                    .responsive-table-container td:before {
+                        content: attr(data-label);
+                        font-weight: bold;
+                        margin-right: auto;
+                        padding-right: 1rem;
+                        text-align: left;
+                        color: #6c757d;
+                    }
+                    
+                    .responsive-table-container td:last-child {
+                        border-bottom: 0;
+                    }
+                    
+                    .responsive-table-container .btn {
+                        padding: 0.25rem 0.5rem;
+                        font-size: 0.875rem;
+                    }
+                }
+            </style>
             
             <style>
                 /* Mobile Table Container */
