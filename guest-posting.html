@@ -42,8 +42,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <!-- Guest Posting Hero Section - Redesigned -->
+ <!-- Guest Posting Hero Section - Redesigned -->
 <section class="hero-guest-posting text-center position-relative overflow-hidden">
     <div class="container position-relative z-index-1 py-6 py-lg-7">
         <h1 class="display-3 fw-bold mb-4 fade-in-text">Premium Guest Posting Services</h1>
@@ -93,7 +92,6 @@
     /* Hero Section Styles */
     .hero-guest-posting {
         background: linear-gradient(135deg, #2c3e50, #3498db);
-       
         color: white;
         padding: 100px 0;
         position: relative;
@@ -678,8 +676,11 @@
         <div class="container text-center">
             <h2 class="fw-bold mb-4">Ready to Boost Your SEO with Guest Posting?</h2>
             <p class="lead mb-5">Get high-quality backlinks from authoritative websites in your niche</p>
-            <a href="#contact" class="btn btn-light btn-lg px-4 me-2">Order Now</a>
-            <a href="index.html#contact" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#contact" class="btn btn-light btn-lg px-4 me-2">Order Now</a>
+                <a href="index.html#contact" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+            </div>
+            
         </div>
     </section>
 
@@ -749,6 +750,18 @@
         }
     });
 </script>
-
+<!-- Floating Contact Buttons - Place before </body> -->
+<div class="floating-contact-buttons">
+    <div class="contact-buttons-container">
+      <a href="https://wa.me/1234567890" class="contact-button whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+        <span class="button-tooltip">Chat on WhatsApp</span>
+      </a>
+      <a href="mailto:contact@example.com" class="contact-button email" aria-label="Send Email">
+        <i class="bi bi-envelope-fill"></i>
+        <span class="button-tooltip">Send us an Email</span>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
