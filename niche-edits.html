@@ -42,14 +42,130 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-niche-edits text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold mb-4">Premium Niche Edits Service</h1>
-            <p class="lead mb-5">Get high-quality backlinks by adding your links to existing content on authoritative websites</p>
-            <a href="#pricing" class="btn btn-primary btn-lg px-4 me-2">View Pricing</a>
-            <a href="#contact" class="btn btn-outline-light btn-lg px-4">Get Started</a>
+    <!-- Niche Edits Hero Section - Redesigned -->
+<section class="hero-niche-edits text-center position-relative overflow-hidden">
+    <div class="container position-relative z-index-1 py-6 py-lg-7">
+        <h1 class="display-3 fw-bold mb-4 fade-in-text">Premium Niche Edits Service</h1>
+        <p class="lead mb-5 mx-auto" style="max-width: 700px;">
+            Get high-authority backlinks by placing your links in <span class="text-warning">existing content</span> on established websites to <span class="text-warning">boost your SEO</span> and <span class="text-warning">drive targeted traffic</span>
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="#pricing" class="btn btn-primary btn-lg px-4 py-3 fw-bold pulse-button">
+                <i class="bi bi-tags me-2"></i> View Pricing
+            </a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold">
+                <i class="bi bi-link-45deg me-2"></i> Get Started
+            </a>
         </div>
-    </section>
+        
+        <!-- Trust Badges -->
+        <div class="d-flex flex-wrap justify-content-center align-items-center mt-5 pt-3 gap-4">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-warning fs-4 me-2"></i>
+                <span class="text-white-80">DA 30+ Sites Only</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-warning fs-4 me-2"></i>
+                <span class="text-white-80">Contextual Placement</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-warning fs-4 me-2"></i>
+                <span class="text-white-80">Permanent Links</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hero Shapes -->
+    <div class="hero-shape-1"></div>
+    <div class="hero-shape-2"></div>
+    
+    <!-- Scrolling Indicator -->
+    <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4">
+        <a href="#services" class="text-white text-decoration-none">
+            <i class="bi bi-chevron-down fs-4 d-block"></i>
+            <span class="small d-block">Scroll Down</span>
+        </a>
+    </div>
+</section>
+
+<style>
+    /* Hero Section Styles */
+    .hero-niche-edits {
+        background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+        color: white;
+        padding: 100px 0;
+        position: relative;
+    }
+    
+    .hero-shape-1 {
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        width: 400px;
+        height: 400px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 50%;
+    }
+    
+    .hero-shape-2 {
+        position: absolute;
+        bottom: -150px;
+        left: -150px;
+        width: 500px;
+        height: 500px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 50%;
+    }
+    
+    .text-white-80 {
+        color: rgba(255,255,255,0.8);
+    }
+    
+    .scroll-indicator {
+        animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-10px);}
+        60% {transform: translateY(-5px);}
+    }
+    
+    .pulse-button {
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.05);}
+        100% {transform: scale(1);}
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 767.98px) {
+        .hero-niche-edits {
+            padding: 80px 0;
+        }
+        
+        h1.display-3 {
+            font-size: 2.5rem;
+        }
+        
+        .hero-shape-1,
+        .hero-shape-2 {
+            display: none;
+        }
+        
+        .d-flex.flex-wrap.justify-content-center.gap-3 {
+            flex-direction: column;
+            gap: 1rem !important;
+        }
+        
+        .btn-lg {
+            width: 100%;
+        }
+    }
+</style>
 
     <!-- Benefits Section -->
     <section class="py-5">
