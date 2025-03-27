@@ -1,25 +1,158 @@
+/* Root Variables for Colors */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
+    --primary-color: #2c3e50;  /* Dark Blue */
+    --secondary-color: #1e88e5; /* Deep Blue */
+    --accent-color: #d32f2f; /* Deeper Red */
+    --light-color: #f5f5f5; /* Near White */
+    --text-color: #222222; /* Darker Gray */
 }
 
+/* Global Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 0;
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #1565c0;
+    border-color: #1565c0;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-accent:hover {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+}
+
+/* Navbar */
 .navbar {
     background-color: var(--primary-color);
+    padding: 8px 0;
 }
+
+.navbar-nav .nav-link {
+    color: var(--light-color);
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Form Inputs */
+input, textarea, select {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid var(--primary-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    background-color: var(--light-color);
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .btn-primary, .btn-accent {
+        width: 100%;
+    }
+}
+
+.nav-link.active {
+    color: #1E90FF !important; /* Dodger Blue */
+    font-weight: bold;
+   
+}
+
+
 
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     padding: 80px 0;
 }
-
+.hero h1 {
+    
+    color: white;
+    
+}
+.hero-guest-posting h1,.hero-niche-edits h1,.hero-press-release h1{
+    color: white
+}
 .service-card {
     transition: transform 0.3s;
     border: none;
@@ -67,11 +200,6 @@ body {
     margin-bottom: 20px;
 }
 
-.footer {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 40px 0;
-}
 
 .contact-info a {
     color: var(--light-color);
@@ -146,16 +274,6 @@ a:hover {
 
 
 
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .navbar {
     background-color: var(--primary-color);
@@ -272,18 +390,6 @@ body {
 
 
 
-
-
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .navbar {
     background-color: var(--primary-color);
@@ -402,18 +508,6 @@ body {
 
 
 
-
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-}
-
 .navbar {
     background-color: var(--primary-color);
 }
@@ -510,16 +604,7 @@ body {
 
 
 
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-}
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .navbar {
     background-color: var(--primary-color);
@@ -624,6 +709,9 @@ body {
     background-color: var(--primary-color);
     color: white;
     padding: 40px 0;
+}
+.footer h3{
+    color: white;
 }
 /* Floating Contact Icons Styles */
 .floating-contact-icons {
