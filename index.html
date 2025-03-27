@@ -682,6 +682,7 @@
     }
   </style>
   <!-- Process Section - Redesigned with Visible Numbers -->
+<!-- Process Section - Mobile-Centered -->
 <section id="process" class="py-6 py-lg-7 bg-light">
     <div class="container">
         <div class="text-center mb-5 pb-3">
@@ -694,17 +695,16 @@
             </p>
         </div>
         
-        <div class="row g-4 process-steps">
+        <!-- Modified row with centering classes -->
+        <div class="row g-4 justify-content-center process-steps">
             <!-- Step 1 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card border-0 h-100 shadow-sm process-card">
+            <div class="col-11 col-sm-10 col-md-6 col-lg-3">
+                <div class="card border-0 h-100 shadow-sm process-card mx-auto" style="max-width: 320px;">
                     <div class="card-body p-4 text-center position-relative">
-                        <div class="step-number-container position-absolute top-0 start-50 translate-middle">
-                            <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
-                                <span class="fs-5 fw-bold">1</span>
-                            </div>
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <span class="fs-4 fw-bold">1</span>
                         </div>
-                        <div class="icon-wrapper bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
                             <i class="bi bi-chat-square-text text-primary fs-4"></i>
                         </div>
                         <h4 class="card-title mb-3">Consultation</h4>
@@ -715,15 +715,13 @@
             </div>
             
             <!-- Step 2 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card border-0 h-100 shadow-sm process-card">
+            <div class="col-11 col-sm-10 col-md-6 col-lg-3">
+                <div class="card border-0 h-100 shadow-sm process-card mx-auto" style="max-width: 320px;">
                     <div class="card-body p-4 text-center position-relative">
-                        <div class="step-number-container position-absolute top-0 start-50 translate-middle">
-                            <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
-                                <span class="fs-5 fw-bold">2</span>
-                            </div>
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <span class="fs-4 fw-bold">2</span>
                         </div>
-                        <div class="icon-wrapper bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
                             <i class="bi bi-pencil-square text-primary fs-4"></i>
                         </div>
                         <h4 class="card-title mb-3">Content Creation</h4>
@@ -734,15 +732,13 @@
             </div>
             
             <!-- Step 3 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card border-0 h-100 shadow-sm process-card">
+            <div class="col-11 col-sm-10 col-md-6 col-lg-3">
+                <div class="card border-0 h-100 shadow-sm process-card mx-auto" style="max-width: 320px;">
                     <div class="card-body p-4 text-center position-relative">
-                        <div class="step-number-container position-absolute top-0 start-50 translate-middle">
-                            <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
-                                <span class="fs-5 fw-bold">3</span>
-                            </div>
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <span class="fs-4 fw-bold">3</span>
                         </div>
-                        <div class="icon-wrapper bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
                             <i class="bi bi-link-45deg text-primary fs-4"></i>
                         </div>
                         <h4 class="card-title mb-3">Placement</h4>
@@ -753,15 +749,13 @@
             </div>
             
             <!-- Step 4 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card border-0 h-100 shadow-sm process-card">
-                    <div class="card-body p-4 text-center position-relative">
-                        <div class="step-number-container position-absolute top-0 start-50 translate-middle">
-                            <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
-                                <span class="fs-5 fw-bold">4</span>
-                            </div>
+            <div class="col-11 col-sm-10 col-md-6 col-lg-3">
+                <div class="card border-0 h-100 shadow-sm process-card mx-auto" style="max-width: 320px;">
+                    <div class="card-body p-4 text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4">
+                            <span class="fs-4 fw-bold">4</span>
                         </div>
-                        <div class="icon-wrapper bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
                             <i class="bi bi-graph-up text-primary fs-4"></i>
                         </div>
                         <h4 class="card-title mb-3">Reporting</h4>
@@ -771,9 +765,68 @@
             </div>
         </div>
         
-        
+        <!-- CTA Section remains unchanged -->
     </div>
 </section>
+
+<style>
+    /* Updated Mobile-Centric CSS */
+    .process-steps {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    @media (max-width: 991.98px) {
+        .process-steps {
+            flex-direction: column;
+            align-items: center !important;
+        }
+        
+        .process-card {
+            width: 100%;
+            max-width: 320px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media (max-width: 575.98px) {
+        .col-11 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        .process-card {
+            max-width: 300px !important;
+        }
+    }
+    
+    /* Keep existing styles for other elements */
+    .process-card {
+        transition: all 0.3s ease;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    
+    .process-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    /* ... (rest of your existing CSS) ... */
+</style>
 
 <style>
     /* Process Section Styles */
