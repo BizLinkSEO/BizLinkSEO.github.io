@@ -1,139 +1,264 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order Confirmation</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation | BizLinkSEO</title>
+    <meta name="description" content="Place your order for premium SEO services">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">BizLinkSEO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guest-posting.html">Guest Posting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="niche-edits.html">Niche Edits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="press-release.html">Press Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="content-writing.html">Content Writing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Hero Section -->
-  <div class="hero-section text-center text-white bg-primary py-5">
-    <h1>Boost Your Online Presence with High-Quality Backlinks</h1>
-    <p>Choose the best plan and service for your needs, and let’s get started!</p>
-  </div>
+    <!-- Hero Section -->
+    <section class="hero text-center position-relative overflow-hidden">
+        <div class="container position-relative z-index-1 py-5">
+            <h1 class="display-4 fw-bold mb-4 fade-in-text">Complete Your Order</h1>
+            <p class="lead mb-5 mx-auto" style="max-width: 700px;">
+                Boost your SEO with our premium services - just a few details needed to get started
+            </p>
+        </div>
+        <div class="hero-shape-1"></div>
+        <div class="hero-shape-2"></div>
+    </section>
 
-  <!-- Order Form Section -->
-  <div class="container bg-white p-4 shadow rounded mt-4">
-    <h2 class="text-center mb-4">Select Your Service and Provide Details</h2>
+    <!-- Order Form Section -->
+    <section class="py-5 py-md-6 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="text-center mb-4">Order Details</h2>
+                            
+                            <!-- Your existing form from order.html goes here -->
+                            <form id="orderForm">
+                                <!-- Service Details (Auto-filled from Pricing Table) -->
+                                <div class="row gy-3">
+                                    <div class="col-md-6">
+                                        <label for="service" class="form-label">Service *</label>
+                                        <input type="text" id="service" name="service" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="package" class="form-label">Package *</label>
+                                        <input type="text" id="package" name="package" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="price" class="form-label">Price *</label>
+                                        <input type="text" id="price" name="price" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="delivery" class="form-label">Estimated Delivery *</label>
+                                        <input type="text" id="delivery" name="delivery" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="da" class="form-label">Domain Authority (DA) *</label>
+                                        <input type="text" id="da" name="da" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="traffic" class="form-label">Estimated Monthly Traffic *</label>
+                                        <input type="text" id="traffic" name="traffic" class="form-control" readonly>
+                                    </div>
+                                </div>
+
+                                <!-- Article Writing Requirement -->
+                                <div id="articleFields" class="form-group mt-3">
+                                    <label>Do you want us to write the article?</label>
+                                    <select class="form-control" id="articleRequired" name="articleRequired">
+                                        <option value="">Select an option</option>
+                                        <option value="yes">Yes, I need an article</option>
+                                        <option value="no">No, I will provide my own</option>
+                                    </select>
+
+                                    <!-- Article Details -->
+                                    <div id="articleDetailsField" style="display: none;">
+                                        <label>Article Instructions (If needed)</label>
+                                        <textarea class="form-control" id="articleDetails" name="articleDetails" rows="3"
+                                            placeholder="Specify word count, topic, tone, and any special requirements"></textarea>
+                                    </div>
+
+                                    <!-- Upload / Google Docs Link -->
+                                    <div id="uploadFields" style="display: none;">
+                                        <label>Upload Your Article (Optional)</label>
+                                        <input type="file" class="form-control" id="articleUpload" name="articleUpload" accept=".doc,.docx,.pdf">
+                                        <label>Or Paste Google Docs Link</label>
+                                        <input type="url" class="form-control" id="googleDocsLink" name="googleDocsLink"
+                                            placeholder="Paste a shared Google Docs link (Ensure link sharing is ON)">
+                                    </div>
+                                </div>
+
+                                <!-- Contact Details -->
+                                <div class="form-group mt-3">
+                                    <label>Website URL</label>
+                                    <input type="url" class="form-control" id="websiteUrl" name="websiteUrl"
+                                        placeholder="Enter your website (e.g., https://yourbusiness.com)" required>
+                                </div>
+
+                                <div class="form-group mt-3">
+                                    <label>Anchor Text (Keywords for Backlink)</label>
+                                    <input type="text" class="form-control" id="anchorText" name="anchorText"
+                                        placeholder="Enter your target keywords" required>
+                                </div>
+
+                                <div class="form-group mt-3">
+                                    <label>Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter your email for order updates" required>
+                                </div>
+
+                                <div class="form-group mt-3">
+                                    <label>Phone (With Country Code) *</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                                </div>
+
+                                <!-- Additional Notes -->
+                                <div class="form-group mt-3">
+                                    <label>Additional Notes (Optional)</label>
+                                    <textarea id="notes" name="notes" class="form-control" rows="3"></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="text-center mt-4">
+                                    <button type="button" class="btn btn-success me-2" id="submitWhatsApp">
+                                        <i class="bi bi-whatsapp me-2"></i> Submit via WhatsApp
+                                    </button>
+                                    <button type="button" class="btn btn-primary" id="submitEmail">
+                                        <i class="bi bi-envelope me-2"></i> Submit via Email
+                                    </button>
+                                </div>
+
+                                <!-- WhatsApp CTA -->
+                                <p class="text-center mt-3">
+                                    Need help? <a href="https://wa.me/923474752708" target="_blank"
+                                        class="text-primary fw-bold">Contact us via WhatsApp</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="fw-bold mb-3">BizLinkSEO</h3>
+                    <p>Premium content and link building services to help your business grow online.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white-50"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-instagram fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3 text-white">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="guest-posting.html" class="text-white-50">Guest Posting</a></li>
+                        <li class="mb-2"><a href="niche-edits.html" class="text-white-50">Niche Edits</a></li>
+                        <li class="mb-2"><a href="press-release.html" class="text-white-50">Press Releases</a></li>
+                        <li class="mb-2"><a href="content-writing.html" class="text-white-50">Article Writing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3 text-white">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html#about" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="index.html#process" class="text-white-50">Our Process</a></li>
+                        <li class="mb-2"><a href="index.html#testimonials" class="text-white-50">Testimonials</a></li>
+                        <li class="mb-2"><a href="index.html#contact" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@bizlinkseo.com</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> +1 (234) 567-890</li>
+                        <li class="mb-2"><i class="bi bi-clock me-2"></i> Mon-Fri: 9am-6pm EST</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 BizLinkSEO. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <form id="orderForm">
-      
-      <!-- Service Details (Auto-filled from Pricing Table) -->
-      <div class="row gy-3">
-        <div class="col-md-6">
-          <label for="service" class="form-label">Service *</label>
-          <input type="text" id="service" name="service" class="form-control" readonly>
+    <!-- Your existing scripts -->
+    <script src="order.js"></script>
+    <script src="orderformupdated.js"></script>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact-buttons">
+        <div class="contact-buttons-container">
+            <a href="https://wa.me/1234567890" class="contact-button whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+                <span class="button-tooltip">Chat on WhatsApp</span>
+            </a>
+            <a href="mailto:contact@example.com" class="contact-button email" aria-label="Send Email">
+                <i class="bi bi-envelope-fill"></i>
+                <span class="button-tooltip">Send us an Email</span>
+            </a>
         </div>
-        <div class="col-md-6">
-          <label for="package" class="form-label">Package *</label>
-          <input type="text" id="package" name="package" class="form-control" readonly>
-        </div>
-        <div class="col-md-6">
-          <label for="price" class="form-label">Price *</label>
-          <input type="text" id="price" name="price" class="form-control" readonly>
-        </div>
-        <div class="col-md-6">
-          <label for="delivery" class="form-label">Estimated Delivery *</label>
-          <input type="text" id="delivery" name="delivery" class="form-control" readonly>
-        </div>
-        <div class="col-md-6">
-          <label for="da" class="form-label">Domain Authority (DA) *</label>
-          <input type="text" id="da" name="da" class="form-control" readonly>
-        </div>
-        <div class="col-md-6">
-          <label for="traffic" class="form-label">Estimated Monthly Traffic *</label>
-          <input type="text" id="traffic" name="traffic" class="form-control" readonly>
-        </div>
-      </div>
-
-      <!-- Article Writing Requirement -->
-      <div id="articleFields" class="form-group mt-3">
-        <label>Do you want us to write the article?</label>
-        <select class="form-control" id="articleRequired" name="articleRequired">
-          <option value="">Select an option</option>
-          <option value="yes">Yes, I need an article</option>
-          <option value="no">No, I will provide my own</option>
-        </select>
-
-        <!-- Article Details -->
-        <div id="articleDetailsField" style="display: none;">
-          <label>Article Instructions (If needed)</label>
-          <textarea class="form-control" id="articleDetails" name="articleDetails" rows="3"
-              placeholder="Specify word count, topic, tone, and any special requirements"></textarea>
-        </div>
-
-        <!-- Upload / Google Docs Link -->
-        <div id="uploadFields" style="display: none;">
-          <label>Upload Your Article (Optional)</label>
-          <input type="file" class="form-control" id="articleUpload" name="articleUpload" accept=".doc,.docx,.pdf">
-          <label>Or Paste Google Docs Link</label>
-          <input type="url" class="form-control" id="googleDocsLink" name="googleDocsLink"
-              placeholder="Paste a shared Google Docs link (Ensure link sharing is ON)">
-        </div>
-      </div>
-
-      <!-- Contact Details -->
-      <div class="form-group mt-3">
-        <label>Website URL</label>
-        <input type="url" class="form-control" id="websiteUrl" name="websiteUrl"
-            placeholder="Enter your website (e.g., https://yourbusiness.com)" required>
-      </div>
-
-      <div class="form-group mt-3">
-        <label>Anchor Text (Keywords for Backlink)</label>
-        <input type="text" class="form-control" id="anchorText" name="anchorText"
-            placeholder="Enter your target keywords" required>
-      </div>
-
-      <div class="form-group mt-3">
-        <label>Your Email</label>
-        <input type="email" class="form-control" id="email" name="email"
-            placeholder="Enter your email for order updates" required>
-      </div>
-
-      <div class="form-group mt-3">
-        <label>Phone (With Country Code) *</label>
-        <input type="tel" id="phone" name="phone" class="form-control" required>
-      </div>
-
-      <!-- Additional Notes -->
-      <div class="form-group mt-3">
-        <label>Additional Notes (Optional)</label>
-        <textarea id="notes" name="notes" class="form-control" rows="3"></textarea>
-      </div>
-
-      <!-- Submit Button -->
-      <div class="text-center mt-4">
-        <button type="button" class="btn btn-success" id="submitWhatsApp">Submit via WhatsApp</button>
-        <button type="button" class="btn btn-primary" id="submitEmail">Submit via Email</button>
-      </div>
-
-      <!-- WhatsApp CTA -->
-      <p class="text-center mt-3">
-        Need help? <a href="https://wa.me/923474752708" target="_blank"
-            class="text-primary font-weight-bold">Contact us via WhatsApp</a>
-      </p>
-
-    </form>
-  </div>
-
-  <!-- Bootstrap & JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  <!-- Custom Scripts -->
- 
- <!-- JavaScript for Handling Article Writing & Disabling for "Niche Edits" -->
-
-<script src="order.js"></script>
-<script src="orderformupdated.js"></script>
+    </div>
 </body>
 </html>
