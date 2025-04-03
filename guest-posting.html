@@ -25,36 +25,104 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">BizLinkSEO</a>
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-icon">🔗</span>
+                <span class="logo-text">BizLinkSEO</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Main Items -->
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link nav-hover-effect" href="index.html">
+                            <i class="bi bi-house-door me-1"></i> Home
+                        </a>
+                    </li>
+                    
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-hover-effect" href="#" id="servicesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-stack me-1"></i> Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-glow">
+                            <li><h6 class="dropdown-header text-uppercase">Premium Link Building</h6></li>
+                            <li><a class="dropdown-item active" href="guest-posting.html">
+                                <i class="bi bi-pencil-square me-2"></i> Guest Posting
+                                <span class="badge bg-primary ms-2">Hot</span>
+                            </a></li>
+                            <li><a class="dropdown-item" href="niche-edits.html">
+                                <i class="bi bi-arrow-left-right me-2"></i> Niche Edits
+                            </a></li>
+                            <li><a class="dropdown-item" href="press-release.html">
+                                <i class="bi bi-megaphone me-2"></i> Press Releases
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="content-writing.html">
+                                <i class="bi bi-file-earmark-richtext me-2"></i> Content Writing
+                            </a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Pricing Link -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover-effect" href="#pricing">
+                            <i class="bi bi-tags me-1"></i> Pricing
+                        </a>
+                    </li>
+                    
+                    <!-- Other Pages -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-hover-effect" href="#" id="sitesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-collection me-1"></i> Sites List
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-glow">
+                            <li><h6 class="dropdown-header text-uppercase">By Authority Level</h6></li>
+                            <li><a class="dropdown-item" href="#site-list">
+                                <i class="bi bi-shield-check me-2"></i> DA 40+ Sites
+                            </a></li>
+                            <li><a class="dropdown-item" href="#site-list">
+                                <i class="bi bi-shield-lock me-2"></i> DA 50+ Sites
+                            </a></li>
+                            <li><a class="dropdown-item" href="#site-list">
+                                <i class="bi bi-shield-plus me-2"></i> DA 60+ Sites
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header text-uppercase">By Category</h6></li>
+                            <li><a class="dropdown-item" href="#site-list">
+                                <i class="bi bi-laptop me-2"></i> Technology
+                            </a></li>
+                            <li><a class="dropdown-item" href="#site-list">
+                                <i class="bi bi-heart-pulse me-2"></i> Health
+                            </a></li>
+                            <li><a class="dropdown-item" href="#site-list">
+                                <i class="bi bi-briefcase me-2"></i> Business
+                            </a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="guest-posting.html">Guest Posting</a>
+                        <a class="nav-link nav-hover-effect" href="index.html#process">
+                            <i class="bi bi-diagram-3 me-1"></i> Process
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="niche-edits.html">Niche Edits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Press Releases</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="content-writing.html">Content Writing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    
+                    <!-- Updated CTA with white text -->
+                    <li class="nav-item ms-lg-3">
+                        <a href="#contact" class="btn btn-gradient text-white">
+                            <i class="bi bi-headset me-1"></i> Get In Touch
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+      </nav>
+      
 
     <!-- Hero Section -->
     <section class="hero text-center position-relative overflow-hidden">
@@ -266,7 +334,97 @@
             </div>
         </div>
     </section>
+<!-- Portfolio Section with Bootstrap Spacing Utilities -->
+<section id="portfolio" class="py-5 py-lg-6 bg-white">
+    <div class="container">
+        <div class="text-center mb-4 mb-md-5 pb-md-2">
+            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3 rounded-pill d-inline-flex align-items-center">
+                <i class="bi bi-collection me-2"></i> Our Guest Posting Network
+            </span>
+            <h2 class="fw-bold mb-3 display-5">We've Published on These Authoritative Websites</h2>
+            <p class="lead text-muted mx-auto px-2 px-md-0" style="max-width: 700px;">
+                See examples of our successful guest post placements across various industries
+            </p>
+        </div>
 
+        <div class="row g-3 g-md-4 justify-content-center">
+            <!-- Finance Example -->
+            <div class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card border-0 shadow-sm h-100 hover-scale mx-2 mx-md-0">
+                    <div class="card-body text-center p-4 p-md-4">
+                        <div class="icon-square bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-3 mb-md-4">
+                            <i class="bi bi-graph-up fs-3"></i>
+                        </div>
+                        <h4 class="mb-2">Finance Hub</h4>
+                        <p class="text-muted mb-3">DA 52 | 25K Monthly Traffic</p>
+                        <div class="mt-auto pt-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1 mb-1">Finance</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-1">Investing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Example -->
+            <div class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card border-0 shadow-sm h-100 hover-scale mx-2 mx-md-0">
+                    <div class="card-body text-center p-4 p-md-4">
+                        <div class="icon-square bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-3 mb-md-4">
+                            <i class="bi bi-cpu fs-3"></i>
+                        </div>
+                        <h4 class="mb-2">Tech Trends</h4>
+                        <p class="text-muted mb-3">DA 48 | 18K Monthly Traffic</p>
+                        <div class="mt-auto pt-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1 mb-1">Technology</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-1">AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Health Example -->
+            <div class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="card border-0 shadow-sm h-100 hover-scale mx-2 mx-md-0">
+                    <div class="card-body text-center p-4 p-md-4">
+                        <div class="icon-square bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-3 mb-md-4">
+                            <i class="bi bi-heart-pulse fs-3"></i>
+                        </div>
+                        <h4 class="mb-2">Health Wise</h4>
+                        <p class="text-muted mb-3">DA 45 | 22K Monthly Traffic</p>
+                        <div class="mt-auto pt-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1 mb-1">Wellness</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-1">Nutrition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketing Example -->
+            <div class="col-10 col-sm-6 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 hover-scale mx-2 mx-md-0">
+                    <div class="card-body text-center p-4 p-md-4">
+                        <div class="icon-square bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-3 mb-md-4">
+                            <i class="bi bi-megaphone fs-3"></i>
+                        </div>
+                        <h4 class="mb-2">Marketing Pro</h4>
+                        <p class="text-muted mb-3">DA 56 | 30K Monthly Traffic</p>
+                        <div class="mt-auto pt-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1 mb-1">Digital Marketing</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary mb-1">SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-4 mt-md-5 pt-md-2">
+            <a href="sites-list.html" class="btn btn-outline-primary px-4 py-2">
+                <i class="bi bi-eye me-2"></i> View More Placements
+            </a>
+        </div>
+    </div>
+</section>
     <!-- Pricing Section -->
     <section id="pricing" class="py-6 py-lg-7 bg-light pr-padding pricing-section">
         <div class="container">
@@ -298,10 +456,11 @@
                             </ul>
                             
                              <button class="btn btn btn-primary mt-auto"
-                             onclick="redirectToOrderPage('Guest Posting', 'Basic', '$50', '7 Days', '30+', '1K+', 'Niche-Relevant Backlink, Do-Follow Link')">
+                              data-service="Guest Posting">
                              Get Started
     
-                         </button>
+                             </button>
+                       
                         </div>
                     </div>
                 </div>
@@ -325,11 +484,11 @@
                                 <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> 1 Premium Authority Website</li>
                             </ul>
                            <!-- <a href="#contact" class="btn btn-primary mt-auto">Get Started</a> -->
-                           <button class="btn btn-primary w-100 py-3 fw-bold"
-                           onclick="redirectToOrderPage('Guest Posting', 'Standard', '$100', '5 Days', '40+', '5K+', 'Indexed Do-Follow, 1 Premium Site')">
-                           Get Started
-                         
-                       </button>
+                           <button class="btn btn btn-primary mt-auto"
+                              data-service="Guest Posting">
+                             Get Started
+    
+                             </button>
                         </div>
                     </div>
                 </div>
@@ -350,10 +509,11 @@
                                 <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Fast Indexing + Extra SEO Boost</li>
                             </ul>
                            <!--<a href="#contact" class="btn btn-primary mt-auto">Get Started</a>--> 
-                           <button class="btn btn-primary w-100 py-3 fw-bold"
-                           onclick="redirectToOrderPage('Guest Posting', 'Premium', '$200', '3 Days', '50+', '10K+', 'High-Traffic Sites, Fast Indexing')">
-                           Get Started</i>
-                       </button>
+                           <button class="btn btn btn-primary mt-auto"
+                              data-service="Guest Posting">
+                             Get Started
+    
+                             </button>
                         </div>
                     </div>
                 </div>
@@ -514,7 +674,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h3 class="fw-bold mb-3">BizLinkSEO</h3>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="logo-icon">🔗</span>
+                        <span class="logo-text">BizLinkSEO</span>
+                    </a>
                     <p>Premium content and link building services to help your business grow online.</p>
                     <div class="d-flex gap-3 mt-3">
                         <a href="#" class="text-white-50"><i class="bi bi-facebook fs-5"></i></a>
@@ -590,5 +753,92 @@
             </a>
         </div>
     </div>
+
+
+
+
+
+
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title" id="orderModalLabel">Place Your Order</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="orderForm" enctype="multipart/form-data">
+                <input type="hidden" id="serviceType" name="serviceType" value="">
+                
+                <!-- Package Selection -->
+                <div class="mb-4">
+                  <div id="packageGuidance" class="alert alert-primary d-flex align-items-center mb-3">
+                    <i class="bi bi-arrow-down-circle me-2"></i>
+                    <div>
+                      <strong>First, select your package</strong>
+                      <div class="small">Click on your preferred option</div>
+                    </div>
+                  </div>
+                  <div class="row g-3" id="packageOptions"></div>
+                </div>
+                
+                <!-- Service Fields -->
+                <div id="serviceSpecificFields"></div>
+                
+                <!-- Contact Info -->
+                <div class="mb-4">
+                  <h6 class="fw-bold mb-3 text-primary">Your Information</h6>
+                  <div class="mb-3">
+                    <label for="customerName" class="form-label">Full Name *</label>
+                    <input type="text" class="form-control" id="customerName" name="customerName" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="customerEmail" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="customerEmail" name="customerEmail" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="customerWhatsApp" class="form-label">WhatsApp (Recommended)</label>
+                    <input type="tel" class="form-control" id="customerWhatsApp" name="customerWhatsApp" placeholder="For faster communication">
+                </div>
+                </div>
+                !-- Important Notice -->
+                    <div class="alert alert-light border mb-4">
+                        <h6 class="fw-bold text-primary mb-2"><i class="bi bi-currency-dollar me-2"></i>Important Payment Information</h6>
+                        <p class="mb-2"><strong>This is not a payment form.</strong> After you submit:</p>
+                        <ul class="mb-0">
+                            <li>We'll analyze your requirements and <strong>send customized site options</strong></li>
+                            <li>You'll review our <strong>hand-picked, relevant websites</strong> for your links</li>
+                            <li>Only after you approve the sites will we <strong>share payment instructions</strong></li>
+                            <li>All payments are handled securely via WhatsApp or Email</li>
+                        </ul>
+                    </div>
+                <!-- Submit Buttons -->
+                <div class="d-grid gap-3">
+                  <button type="button" class="btn btn-primary btn-lg" id="submitEmailBtn">
+                    <i class="bi bi-envelope me-2"></i> Submit via Email
+                  </button>
+                  <button type="button" class="btn btn-success btn-lg" id="submitWhatsAppBtn">
+                    <i class="bi bi-whatsapp me-2"></i> Submit via WhatsApp
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<script src="homepage-order.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
