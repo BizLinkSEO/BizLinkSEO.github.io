@@ -25,37 +25,78 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">BizLinkSEO</a>
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-icon">🔗</span>
+                <span class="logo-text">BizLinkSEO</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Main Items -->
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link nav-hover-effect" href="index.html">
+                            <i class="bi bi-house-door me-1"></i> Home
+                        </a>
+                    </li>
+                    
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-hover-effect" href="#" id="servicesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-stack me-1"></i> Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-glow">
+                            <li><h6 class="dropdown-header text-uppercase">Premium Link Building</h6></li>
+                            <li><a class="dropdown-item" href="guest-posting.html">
+                                <i class="bi bi-pencil-square me-2"></i> Guest Posting
+                                <span class="badge bg-primary ms-2">Hot</span>
+                            </a></li>
+                            <li><a class="dropdown-item active" href="niche-edits.html">
+                                <i class="bi bi-arrow-left-right me-2"></i> Niche Edits
+                            </a></li>
+                            <li><a class="dropdown-item" href="press-release.html">
+                                <i class="bi bi-megaphone me-2"></i> Press Releases
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="content-writing.html">
+                                <i class="bi bi-file-earmark-richtext me-2"></i> Content Writing
+                            </a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Pricing Link -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover-effect" href="#pricing">
+                            <i class="bi bi-tags me-1"></i> Pricing
+                        </a>
+                    </li>
+                    
+                    <!-- Other Pages -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover-effect" href="index.html#about">
+                            <i class="bi bi-info-circle me-1"></i> About
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="guest-posting.html">Guest Posting</a>
+                        <a class="nav-link nav-hover-effect" href="index.html#process">
+                            <i class="bi bi-diagram-3 me-1"></i> Process
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="niche-edits.html">Niche Edits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="press-release.html">Press Releases</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="content-writing.html">Content Writing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    
+                    <!-- Updated CTA with white text -->
+                    <li class="nav-item ms-lg-3">
+                        <a href="#contact" class="btn btn-gradient text-white">
+                            <i class="bi bi-headset me-1"></i> Get In Touch
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-
+      </nav>
     <!-- Hero Section -->
     <section class="hero text-center position-relative overflow-hidden">
         <div class="container position-relative z-index-1 py-6 py-lg-7">
@@ -294,10 +335,11 @@
                                 <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Do-Follow Permanent Link</li>
                             </ul>
                            <!-- <a href="#contact" class="btn btn-primary mt-auto">Get Started</a>-->
-                           <button class="btn btn-primary w-100 py-3 fw-bold"
-                           onclick="redirectToOrderPage('Niche Edits', 'Basic', '$40', '6 Days', '30+', '3K+', 'Do-Follow Link')">
-                           Get Started
-                       </button>
+                           <button class="btn btn btn-primary mt-auto"
+                           data-service="Niche Edits">
+                          Get Started
+ 
+                          </button>
                         </div>
                     </div>
                 </div>
@@ -321,10 +363,11 @@
                                 <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Safe & Secure Backlink Placement</li>
                             </ul>
                            <!-- <a href="#contact" class="btn btn-primary mt-auto">Get Started</a> -->
-                           <button class="btn btn-primary w-100 py-3 fw-bold"
-                           onclick="redirectToOrderPage('Niche Edits', 'Standard', '$90', '5 Days', '40+', '8K+', 'Safe Link Placement')">
-                           Get Started
-                       </button>
+                           <button class="btn btn btn-primary mt-auto"
+                              data-service="Niche Edits">
+                             Get Started
+    
+                             </button>
                         </div>
                     </div>
                 </div>
@@ -345,10 +388,11 @@
                                 <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Exclusive High-Authority Websites</li>
                             </ul>
                            <!-- <a href="#contact" class="btn btn-primary mt-auto">Get Started</a>-->
-                            <button class="btn btn-primary w-100 py-3 fw-bold"
-                                    onclick="redirectToOrderPage('Niche Edits', 'Premium', '$180', '3 Days', '50+', '15K+', 'High-Authority Sites')">
-                                    Get Started
-                                </button>
+                           <button class="btn btn btn-primary mt-auto"
+                           data-service="Niche Edits">
+                          Get Started
+ 
+                          </button>
                         </div>
                     </div>
                 </div>
@@ -623,5 +667,73 @@
             </a>
         </div>
     </div>
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title" id="orderModalLabel">Place Your Order</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="orderForm" enctype="multipart/form-data">
+                <input type="hidden" id="serviceType" name="serviceType" value="">
+                
+                <!-- Package Selection -->
+                <div class="mb-4">
+                  <div id="packageGuidance" class="alert alert-primary d-flex align-items-center mb-3">
+                    <i class="bi bi-arrow-down-circle me-2"></i>
+                    <div>
+                      <strong>First, select your package</strong>
+                      <div class="small">Click on your preferred option</div>
+                    </div>
+                  </div>
+                  <div class="row g-3" id="packageOptions"></div>
+                </div>
+                
+                <!-- Service Fields -->
+                <div id="serviceSpecificFields"></div>
+                
+                <!-- Contact Info -->
+                <div class="mb-4">
+                  <h6 class="fw-bold mb-3 text-primary">Your Information</h6>
+                  <div class="mb-3">
+                    <label for="customerName" class="form-label">Full Name *</label>
+                    <input type="text" class="form-control" id="customerName" name="customerName" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="customerEmail" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="customerEmail" name="customerEmail" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="customerWhatsApp" class="form-label">WhatsApp (Recommended)</label>
+                    <input type="tel" class="form-control" id="customerWhatsApp" name="customerWhatsApp" placeholder="For faster communication">
+                </div>
+                </div>
+                !-- Important Notice -->
+                    <div class="alert alert-light border mb-4">
+                        <h6 class="fw-bold text-primary mb-2"><i class="bi bi-currency-dollar me-2"></i>Important Payment Information</h6>
+                        <p class="mb-2"><strong>This is not a payment form.</strong> After you submit:</p>
+                        <ul class="mb-0">
+                            <li>We'll analyze your requirements and <strong>send customized site options</strong></li>
+                            <li>You'll review our <strong>hand-picked, relevant websites</strong> for your links</li>
+                            <li>Only after you approve the sites will we <strong>share payment instructions</strong></li>
+                            <li>All payments are handled securely via WhatsApp or Email</li>
+                        </ul>
+                    </div>
+                <!-- Submit Buttons -->
+                <div class="d-grid gap-3">
+                  <button type="button" class="btn btn-primary btn-lg" id="submitEmailBtn">
+                    <i class="bi bi-envelope me-2"></i> Submit via Email
+                  </button>
+                  <button type="button" class="btn btn-success btn-lg" id="submitWhatsAppBtn">
+                    <i class="bi bi-whatsapp me-2"></i> Submit via WhatsApp
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="homepage-order.js"></script>
 </body>
 </html>
